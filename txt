@@ -1,3 +1,1 @@
 exam_name, exam_eligibility, recomended_topics, exam_details, description, career_scope
-
-## demo:

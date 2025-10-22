@@ -1,4 +1,3 @@
-# Use a pipeline as a high-level helper
 from transformers import pipeline
 
 print("Downloading........\nsize(3GB+)")
@@ -29,8 +28,8 @@ pipe(messages)
 
 # ---------------------------------------------------------------------------------------------------------------------------
 """ 
-Or the quentize version: 
-
+Or you can download the quantize version: 
+I prefare the quantize version
 
 # !pip install llama-cpp-python
 
