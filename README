@@ -1,0 +1,14 @@
+### 🧠 Quick details
+
+| Property       | Value                    |
+| -------------- | ------------------------ |
+| Parameters     | ~1.5 B                   |
+| Context length | 32 K                     |
+| Embedding size | 1536                     |
+| Architecture   | Decoder-only transformer |
+| Quantized size | ~2–3 GB (Int4)           |
+
+
+## Steps:
+1. [Download](download_model.py) the model 
+
