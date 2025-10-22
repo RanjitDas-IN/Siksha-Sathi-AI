@@ -10,5 +10,5 @@
 
 
 ## Steps:
-i. [Download](download_model.py) the model 
+1. [Download](download_model.py) the model 
 
