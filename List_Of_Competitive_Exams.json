@@ -1,0 +1,59 @@
+{
+  "After_10th_or_12th": [
+    "NTSE (National Talent Search Examination)",
+    "KVPY (Kishore Vaigyanik Protsahan Yojana)",
+    "JEE Main (Joint Entrance Examination Main)",
+    "JEE Advanced (Joint Entrance Examination Advanced)",
+    "NEET (National Eligibility cum Entrance Test)",
+    "NATA (National Aptitude Test in Architecture)",
+    "CUET (Common University Entrance Test)"
+  ],
+  "After_Graduation_or_Government_Jobs": [
+    "UPSC Civil Services Examination (CSE)",
+    "UPSC Engineering Services Examination (ESE)",
+    "GATE (Graduate Aptitude Test in Engineering)",
+    "CLAT (Common Law Admission Test)",
+    "SSC CGL (Staff Selection Commission Combined Graduate Level)",
+    "IBPS PO (Institute of Banking Personnel Selection Probationary Officer)",
+    "RRB NTPC (Railway Recruitment Board Non-Technical Popular Categories)",
+    "RRB JE (Railway Recruitment Board Junior Engineer)"
+  ],
+  "Management_and_Business": [
+    "CAT (Common Admission Test)",
+    "XAT (Xavier Aptitude Test)",
+    "MAT (Management Aptitude Test)",
+    "SNAP (Symbiosis National Aptitude Test)",
+    "NMAT (NMIMS Management Aptitude Test)",
+    "CMAT (Common Management Admission Test)"
+  ],
+  "Defence_and_Armed_Forces": [
+    "NDA (National Defence Academy Examination)",
+    "CDS (Combined Defence Services Examination)",
+    "AFCAT (Air Force Common Admission Test)",
+    "Indian Coast Guard Assistant Commandant Exam"
+  ],
+  "Law_and_Legal_Studies": [
+    "CLAT (Common Law Admission Test)",
+    "AILET (All India Law Entrance Test)",
+    "LSAT India (Law School Admission Test India)"
+  ],
+  "Fashion_Design_and_Hotel_Management": [
+    "NIFT Entrance Exam (National Institute of Fashion Technology)",
+    "NID DAT (National Institute of Design – Design Aptitude Test)",
+    "UCEED (Undergraduate Common Entrance Examination for Design)",
+    "NCHM JEE (National Council for Hotel Management Joint Entrance Examination)"
+  ],
+  "Teaching_and_Education": [
+    "CTET (Central Teacher Eligibility Test)",
+    "TET (Teacher Eligibility Test – State Level)",
+    "NET (National Eligibility Test)",
+    "SET (State Eligibility Test)"
+  ],
+  "Other_Notable_Exams": [
+    "ICAR AIEEA (Indian Council of Agricultural Research – All India Entrance Exam for Admission)",
+    "IGNOU OPENMAT (for MBA at IGNOU)",
+    "BITSAT (Birla Institute of Technology and Science Admission Test)",
+    "VITEEE (VIT Engineering Entrance Examination)",
+    "SRMJEEE (SRM Joint Engineering Entrance Examination)"
+  ]
+}

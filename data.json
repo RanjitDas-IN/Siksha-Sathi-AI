@@ -1,7 +1,299 @@
+[
+  {
+    "exam_name": "NTSE (National Talent Search Examination)",
+    "exam_eligibility": "Students studying in Class 10 in recognized schools are eligible to appear for NTSE. Candidates must be Indian nationals, and there is no minimum percentage requirement to apply for the Stage 1 exam. However, qualifying marks from Stage 1 determine eligibility for Stage 2, which is conducted by NCERT. Students studying abroad in Class 10 can also apply directly for Stage 2 if they meet the prescribed eligibility norms.",
+    "recomended_topics": "The NTSE syllabus covers Mental Ability, Science, Mathematics, Social Science, and English. Key focus areas include Number Systems, Algebra, Geometry, Physics fundamentals (Motion, Electricity), Chemistry basics (Atoms, Reactions), and Social Science topics like History, Geography, and Civics. Logical reasoning, pattern recognition, and analytical problem-solving are crucial for the Mental Ability Test (MAT).",
+    "exam_details": "NTSE is conducted in two stages: Stage 1 (state-level) and Stage 2 (national-level). Both stages consist of two papers — the Mental Ability Test (MAT) and the Scholastic Aptitude Test (SAT). Each paper has 100 multiple-choice questions, with a total duration of 2 hours per paper. There is no negative marking. Stage 2 is conducted by NCERT and tests similar topics at a higher difficulty level.",
+    "career_scope": "Qualifying NTSE scholars receive a monthly scholarship through all stages of education — up to the doctoral level. Beyond financial aid, NTSE recognition enhances academic profiles for future opportunities like IITs, NITs, AIIMS, and foreign universities. Many top-performing students use NTSE as a foundation for preparing for JEE, NEET, and Civil Services examinations."
+  },
+  {
+    "exam_name": "KVPY (Kishore Vaigyanik Protsahan Yojana)",
+    "exam_eligibility": "KVPY was open to Indian students studying in Class 11, 12, or the first year of an undergraduate science program (B.Sc., B.S., B.Stat., B.Math., Int. M.Sc., or M.S.) in Physics, Chemistry, Mathematics, and Biology streams. Candidates were required to have a strong academic record in the previous qualifying examination, typically with 60% aggregate marks (50% for SC/ST/PwD).",
+    "recomended_topics": "KVPY’s syllabus focuses on core concepts from Physics, Chemistry, Mathematics, and Biology of Classes 10 to 12. Key Physics topics include Mechanics, Waves, Optics, and Thermodynamics. Chemistry includes Organic, Inorganic, and Physical Chemistry fundamentals. Mathematics covers Algebra, Calculus, and Coordinate Geometry. Biology includes Genetics, Ecology, and Cell Biology. Conceptual understanding and application-based questions are emphasized.",
+    "exam_details": "The KVPY aptitude test consisted of two parts with 80 questions carrying 100 marks, divided into Physics, Chemistry, Biology, and Mathematics. It was conducted in an online (computer-based) format. Students from different streams (SA, SX, SB) could attempt different sections. The test duration was 3 hours, and the final selection was based on the aptitude test and interview performance.",
+    "career_scope": "Students selected through KVPY received scholarships up to the pre-PhD level. The program aimed to encourage careers in scientific research by supporting students pursuing basic science courses. Many KVPY scholars continued into research-oriented paths, including ISRO, DRDO, CSIR labs, and top institutions like IISc, IISERs, and IITs. The recognition also served as a strong credential for research fellowships and global academic opportunities."
+  },
+  {
+    "exam_name": "JEE Main (Joint Entrance Examination Main)",
+    "exam_eligibility": "To be eligible for JEE Main, candidates must have passed their Class 12 (or equivalent) examination with Physics, Chemistry, and Mathematics. Candidates should have secured at least 75% aggregate marks in Class 12 (65% for SC/ST/PwD). The candidate must be born on or after October 1, 2000 (five-year relaxation for SC/ST/PwD). There is no upper limit on the number of attempts, but the exam is conducted twice a year, and candidates can appear in both sessions.",
+    "recomended_topics": "JEE Main syllabus includes topics from Physics, Chemistry, and Mathematics of Classes 11 and 12. Important topics in Physics: Mechanics, Electrodynamics, Optics, Thermodynamics, Modern Physics. In Chemistry: Physical, Organic, and Inorganic Chemistry concepts. Mathematics covers Algebra, Calculus, Coordinate Geometry, Trigonometry, and Probability. Conceptual clarity and problem-solving speed are key.",
+    "exam_details": "JEE Main is a computer-based test with two papers: Paper 1 for B.E./B.Tech admissions (consists of Physics, Chemistry, Mathematics, 3 hours, 75 questions, 300 marks) and Paper 2 for B.Arch/B.Planning admissions. Each correct answer carries 4 marks, and each incorrect answer leads to a deduction of 1 mark. The question paper includes multiple-choice and numerical-based questions.",
+    "career_scope": "Qualifying JEE Main allows admission to NITs, IIITs, and GFTIs in India for undergraduate engineering programs. It also serves as a qualifying test for JEE Advanced, which opens doors to the prestigious IITs. High scores can enhance scholarship opportunities and international program eligibility."
+  },
+  {
+    "exam_name": "JEE Advanced (Joint Entrance Examination Advanced)",
+    "exam_eligibility": "Candidates must have qualified JEE Main and be among the top 2,50,000 rank holders (including all categories). They should have passed Class 12 (or equivalent) examination within the last two years and meet the age criteria specified by the exam authorities. Candidates can attempt JEE Advanced a maximum of two times in consecutive years.",
+    "recomended_topics": "The JEE Advanced syllabus covers Physics, Chemistry, and Mathematics of Classes 11 and 12, with deeper emphasis on conceptual understanding and application. Physics topics: Mechanics, Electrodynamics, Thermodynamics, Optics, Modern Physics. Chemistry: Physical, Organic, Inorganic Chemistry with problem-solving orientation. Mathematics: Calculus, Algebra, Coordinate Geometry, Trigonometry, Vectors. Analytical thinking, derivation skills, and complex problem-solving are crucial.",
+    "exam_details": "JEE Advanced is a computer-based test with two papers (Paper 1 and Paper 2), each of 3 hours duration. The exam pattern varies slightly each year but typically includes multiple-choice questions with single or multiple correct answers, numerical answer-type questions, and matching-based questions. Negative marking applies for incorrect answers in several sections. The total marks vary, generally around 360.",
+    "career_scope": "Qualifying JEE Advanced is mandatory for admission to the IITs for undergraduate programs in engineering, sciences, and dual-degree courses. High rankers may receive scholarships, participate in research internships, and gain direct access to premier institutions for higher studies and global academic opportunities."
+  },
+  {
+    "exam_name": "NEET UG (National Eligibility cum Entrance Test)",
+    "exam_eligibility": "To be eligible for NEET UG, candidates must be at least 17 years old by December 31 of the admission year and have passed their 12th-grade exams with Physics, Chemistry, Biology, and English. They must meet minimum marks: 50% for General, 40% for SC/ST/OBC, and 45% for PwD candidates. There is no upper age limit, and candidates can attempt the exam any number of times as per the latest guidelines.",
+    "recomended_topics": "Important topics include Human Physiology, Genetics, Plant Physiology, and Organic Chemistry for Biology and Chemistry. Physics topics cover Mechanics, Electrodynamics, Optics, and Thermodynamics. Emphasis is on NCERT concepts, diagrams, and conceptual problem solving.",
+    "exam_details": "NEET UG is a pen-and-paper test consisting of 180 multiple-choice questions: 90 from Biology, 45 from Physics, and 45 from Chemistry. Each correct answer awards 4 marks, and incorrect answers carry a 1-mark penalty. Total exam duration is 3 hours.",
+    "career_scope": "NEET qualifying candidates can pursue MBBS, BDS, AYUSH courses (BAMS, BHMS, BUMS), veterinary science, pharmacy, and allied health professions. Opportunities exist in clinical practice, medical research, public health, healthcare administration, and higher studies abroad."
+  },
+  {
+    "exam_name": "NATA (National Aptitude Test in Architecture)",
+    "exam_eligibility": "Students who have passed or are appearing in 10+2 with Mathematics as a subject are eligible. Candidates with a 10+3 diploma with Mathematics can also apply. There is no minimum age limit, but candidates must fulfill the minimum educational qualifications as per the Council of Architecture guidelines.",
+    "recomended_topics": "NATA evaluates drawing, observation skills, sense of proportion, aesthetic sensitivity, and critical thinking. Recommended topics include Freehand drawing, 3D visualization, Architectural Awareness, General Aptitude, and Mathematical reasoning (Geometry, Mensuration).",
+    "exam_details": "NATA is a 3-hour exam with two parts: Part A – Online Test (MCQs on Mathematics, General Aptitude, and Logical Reasoning) and Part B – Drawing Test (offline drawing skills). Total marks are 200, with Part A contributing 120 marks and Part B 80 marks. There is no negative marking.",
+    "career_scope": "Qualifying NATA allows admission to undergraduate architecture programs (B.Arch) in recognized institutes across India. Career options include architecture practice, urban planning, interior design, landscape architecture, and roles in construction and real estate sectors."
+  },
+  {
+    "exam_name": "CUET (Common University Entrance Test)",
+    "exam_eligibility": "Candidates who have passed or are appearing in Class 12 or equivalent are eligible. Some universities may have subject-specific eligibility criteria depending on the course applied for. There is no restriction on age or number of attempts.",
+    "recomended_topics": "CUET assesses proficiency in Language (English/Hindi), Domain-Specific Subjects (Physics, Chemistry, Mathematics, Biology, Economics, History, etc.), and General Test (Quantitative Ability, Logical Reasoning, and General Knowledge). Candidates should focus on NCERT textbooks and previous CUET papers for preparation.",
+    "exam_details": "CUET is an online computer-based test. The paper consists of multiple-choice questions, divided into Language Tests, Domain-Specific Tests, and General Test sections. The number of questions and duration vary depending on the course and university. Each correct answer typically awards one mark; there is no negative marking for most sections.",
+    "career_scope": "Qualifying CUET allows admission to undergraduate programs in central and participating universities across India. It facilitates entry into fields such as Science, Commerce, Arts, Humanities, Law, and Social Sciences, depending on the chosen course and university."
+  },
+  {
+    "exam_name": "UPSC Civil Services Examination (CSE)",
+    "exam_eligibility": "Candidates must be Indian citizens (for IAS, IPS, IFS, and other services). They should hold a bachelor's degree from a recognized university. The age requirement is 21 to 32 years for General category candidates, with age relaxation for OBC (up to 35 years), SC/ST (up to 37 years), and other categories as per government rules. A maximum of 6 attempts is allowed for General category, with more for reserved categories.",
+    "recomended_topics": "Preparation requires knowledge of History, Geography, Polity, Economics, Environment, Science & Technology, Current Affairs, Ethics, and optional subject-specific topics chosen by the candidate. Emphasis is on NCERTs, standard reference books, newspapers, and government reports. Analytical writing and answer structuring skills are essential.",
+    "exam_details": "CSE has three stages: Preliminary (objective multiple-choice questions for CSAT and General Studies), Main (9 papers including 2 qualifying language papers and 7 merit-based papers), and Personality Test/Interview. The Preliminary exam is for screening only, while the Main exam marks and interview scores determine final ranking.",
+    "career_scope": "Successful candidates join prestigious administrative services like IAS, IPS, IFS, and other central services. They can serve in policymaking, governance, law enforcement, foreign services, and leadership positions in various government departments. Career growth is structured, with opportunities for deputations, training, and international exposure."
+  },
+  {
+    "exam_name": "UPSC Engineering Services Examination (ESE)",
+    "exam_eligibility": "Candidates must be Indian citizens (or meet the eligibility criteria for specified categories) and have a bachelor's degree in Engineering (B.E./B.Tech) from a recognized university. Age limit is 21–30 years for General candidates, with relaxation for OBC (up to 33), SC/ST (up to 35), and other categories. A maximum of 4 attempts is allowed for General candidates, with relaxations for reserved categories.",
+    "recomended_topics": "The syllabus includes technical engineering subjects corresponding to the candidate’s branch (Civil, Mechanical, Electrical, Electronics & Telecommunication). Topics from Physics, General Studies, and Engineering aptitude are also included. Strong problem-solving, analytical skills, and conceptual understanding of core engineering principles are essential.",
+    "exam_details": "ESE has three stages: Preliminary (objective-type questions testing general ability and engineering fundamentals), Mains (conventional answer-type questions focusing on core engineering subjects), and Personality Test/Interview. Preliminary is 2 hours with multiple-choice questions, Mains is 3 hours per paper, and the interview assesses personality, decision-making, and leadership abilities.",
+    "career_scope": "ESE qualifiers are recruited into prestigious Indian Engineering Services (IES), working in government departments like Railways, Central Water Commission, CPWD, Indian Ordnance Factories, and other public sector units. Career offers stable government employment, structured promotions, technical and administrative responsibilities, and leadership roles."
+  },
 {
-"exam_name": "NEET UG",
-"exam_eligibility": "To be eligible for NEET 2025, candidates must be at least 17 years old by December 31, 2025, have passed their 12th-grade exams with Physics, Chemistry, Biology, and English, and meet specific marks based on their category: 50% for General, 40% for SC/ST/OBC, and 45% for PwD. There is no upper age limit and no restriction on the number of attempts.",
-"recomended_topics": "Recommended topics for the NEET exam include Human Physiology, Genetics, and Organic Chemistry for Biology and Chemistry, along with Mechanics, Optics, and Electromagnetism for Physics. Other important areas are Thermodynamics, Chemical Bonding, and Cell Biology.",
-"exam_details": "The 3-hour exam consists of 180 multiple-choice questions from Physics, Chemistry, and Biology (90 questions from Biology), with each correct answer worth 4 marks and incorrect answers resulting in a 1-mark deduction",
-"career_scope":"The career scope after the NEET exam is broad, encompassing traditional medical roles like physicians (MBBS) and dentists (BDS), as well as alternative medicine (AYUSH courses), allied health fields (physiotherapy, nursing, occupational therapy), and non-clinical paths such as medical research, healthcare administration, and public health. Other options include veterinary science, biotechnology, and pharmacy."
-}
+    "exam_name": "GATE (Graduate Aptitude Test in Engineering)",
+    "exam_eligibility": "Candidates must have a bachelor's degree in Engineering/Technology/Architecture or a master's degree in Science/Mathematics/Statistics/Computer Applications. There is no age limit, and candidates can attempt the exam any number of times. Final-year students are also eligible to apply.",
+    "recomended_topics": "GATE syllabus includes core subjects of the candidate’s chosen engineering or science stream. Key areas include Engineering Mathematics, subject-specific technical concepts, General Aptitude, and analytical problem-solving. Practice of previous years’ questions and understanding conceptual depth is crucial.",
+    "exam_details": "GATE is a computer-based test of 3 hours duration, consisting of multiple-choice questions (MCQs) and numerical answer type questions. Total marks are 100, with negative marking for incorrect MCQs. Questions assess both theoretical knowledge and problem-solving skills.",
+    "career_scope": "Qualifying GATE allows admission to postgraduate programs (M.Tech, M.E., Ph.D.) in IITs, NITs, and IISc. High scores also enable recruitment into Public Sector Undertakings (PSUs) like IOCL, NTPC, BHEL, and Indian Railways. It is a gateway for academic and research opportunities both in India and abroad."
+  },
+  {
+    "exam_name": "CLAT (Common Law Admission Test)",
+    "exam_eligibility": "Candidates seeking admission to undergraduate law programs (5-year integrated LLB) must have passed 10+2 or equivalent examination with at least 45% marks (40% for SC/ST). For postgraduate LLM, a law degree is required. There is no age limit for applying.",
+    "recomended_topics": "CLAT syllabus covers English Language, Current Affairs including General Knowledge, Legal Aptitude, Logical Reasoning, and Elementary Mathematics. Reading comprehension, critical reasoning, and basic understanding of legal principles are essential.",
+    "exam_details": "CLAT is a 2-hour online test consisting of 150 multiple-choice questions for UG programs. Each correct answer carries one mark, and there is a 0.25-mark penalty for incorrect answers. Questions are designed to assess comprehension, legal aptitude, reasoning, and general awareness.",
+    "career_scope": "Qualifying CLAT allows admission to National Law Universities (NLUs) across India. Career opportunities include legal practice, corporate law, judiciary services, research, policy-making, and academia. High scorers may also pursue international law programs or work with NGOs and government legal departments."
+  },
+  {
+    "exam_name": "SSC CGL (Staff Selection Commission Combined Graduate Level)",
+    "exam_eligibility": "Candidates must be Indian citizens, aged between 18 and 32 years (relaxation applicable for reserved categories). A bachelor’s degree from a recognized university is mandatory. Candidates must meet any additional criteria based on the specific post applied for.",
+    "recomended_topics": "The exam syllabus includes General Intelligence and Reasoning, General Awareness, Quantitative Aptitude, and English Comprehension. Emphasis is on logical reasoning, arithmetic, vocabulary, current events, history, geography, and basic economics.",
+    "exam_details": "SSC CGL has four tiers: Tier-I (objective MCQs), Tier-II (objective MCQs, higher difficulty), Tier-III (descriptive paper), and Tier-IV (skill test/computer proficiency test for specific posts). Tier-I and Tier-II are computer-based, with negative marking for wrong answers. Tier-III tests writing skills, and Tier-IV evaluates practical skills.",
+    "career_scope": "Qualifying SSC CGL opens doors to various central government posts like Inspector, Assistant, Auditor, Income Tax Officer, Excise Inspector, and more. Offers stable government employment, career growth, and transfer opportunities across India."
+  },
+  {
+    "exam_name": "IBPS PO (Institute of Banking Personnel Selection – Probationary Officer)",
+    "exam_eligibility": "Candidates must be Indian citizens with a bachelor’s degree in any discipline from a recognized university. Age should be 21–30 years (relaxation applicable for reserved categories). Some state-specific criteria may apply.",
+    "recomended_topics": "Syllabus includes Quantitative Aptitude, Reasoning Ability, English Language, General Awareness (with special reference to Banking Industry), and Computer Knowledge. Practice of banking awareness, data interpretation, logical reasoning puzzles, and reading comprehension is essential.",
+    "exam_details": "The IBPS PO selection process consists of Preliminary Exam (objective MCQs), Main Exam (objective + descriptive), and Interview. Preliminary is qualifying, while the final selection is based on Main + Interview scores. Negative marking of 0.25 marks applies for wrong answers in objective sections.",
+    "career_scope": "Selected candidates join as Probationary Officers in public sector banks. Career involves promotions to managerial and senior roles, specialization in operations, credit, risk, or foreign banking, and opportunities for central banking and leadership positions."
+  },
+  {
+    "exam_name": "RRB NTPC (Railway Recruitment Board Non-Technical Popular Categories)",
+    "exam_eligibility": "Candidates must be Indian citizens aged 18–33 years (varies by post) with at least a 12th pass from a recognized board. Physical and medical standards as per RRB norms must be met.",
+    "recomended_topics": "Syllabus includes Mathematics, General Intelligence and Reasoning, General Awareness (Current Affairs, Indian History, Geography, Economy, General Science), and Computer Knowledge. Emphasis on speed, accuracy, and knowledge of basic railway operations and procedures.",
+    "exam_details": "Selection consists of a Computer-Based Test (CBT), followed by Typing Skill Test/Document Verification/Physical Efficiency Test for specific posts. The CBT includes multiple-choice questions with negative marking for incorrect answers.",
+    "career_scope": "Successful candidates are posted in various non-technical railway roles like clerk, goods guard, station master, traffic assistant, and cashier. Career offers stable government employment, regular pay scales, promotion opportunities, and pension benefits."
+  },
+  {
+    "exam_name": "RRB JE (Railway Recruitment Board Junior Engineer)",
+    "exam_eligibility": "Candidates must have a diploma or degree in engineering in relevant branches. Age should be 18–33 years, with relaxation for reserved categories. Medical and physical standards must be met as per RRB requirements.",
+    "recomended_topics": "Syllabus includes Technical subjects relevant to the engineering branch, General Intelligence and Reasoning, General Awareness, and Arithmetic. Core engineering concepts, problem-solving, and technical aptitude are key.",
+    "exam_details": "Selection involves a Computer-Based Test (CBT), followed by Document Verification and Medical Examination. The CBT consists of objective-type questions covering technical knowledge, general awareness, reasoning, and numerical ability.",
+    "career_scope": "Qualified candidates join as Junior Engineers in Indian Railways in departments like Civil, Mechanical, Electrical, and Electronics. Career offers structured promotions, technical and administrative responsibilities, transfers across India, and long-term benefits including pension."
+  },
+
+  {
+    "exam_name": "CAT (Common Admission Test)",
+    "exam_eligibility": "Candidates must hold a bachelor's degree with at least 50% marks (45% for SC/ST/PwD). Final-year students can also apply, provided they complete their degree before the admission process. There is no age limit, and the number of attempts is not restricted.",
+    "recomended_topics": "Syllabus covers Quantitative Ability, Data Interpretation & Logical Reasoning, Verbal Ability & Reading Comprehension. Focus on algebra, arithmetic, geometry, critical reasoning, data interpretation, and comprehension passages.",
+    "exam_details": "CAT is a computer-based test of 3 hours, divided into three sections: Verbal Ability & Reading Comprehension, Data Interpretation & Logical Reasoning, and Quantitative Ability. Each section is timed individually. Scores are normalized, and percentile ranking determines admission eligibility.",
+    "career_scope": "Qualifying CAT allows admission to IIMs and other top business schools for MBA/PGDM programs. Career opportunities include management consulting, finance, marketing, operations, HR, entrepreneurship, and leadership roles in corporate sectors."
+  },
+  {
+    "exam_name": "XAT (Xavier Aptitude Test)",
+    "exam_eligibility": "Candidates must have a bachelor's degree in any discipline with a minimum of 50% marks. Final-year students are eligible. There is no age restriction, and attempts are not limited.",
+    "recomended_topics": "Syllabus includes Verbal and Logical Ability, Decision Making, Quantitative Ability & Data Interpretation, and General Knowledge. Emphasis on analytical reasoning, problem-solving, comprehension, and business awareness.",
+    "exam_details": "XAT is a computer-based test of 3 hours with multiple-choice questions and a few subjective questions in Decision Making. Sections include Verbal & Logical Ability, Decision Making, Quantitative Ability & Data Interpretation, and General Knowledge. Some universities consider essay writing or group discussion in selection.",
+    "career_scope": "Qualifying XAT allows admission to XLRI and other associated B-schools. Graduates can pursue careers in management, consulting, finance, marketing, operations, and HR in India and globally."
+  },
+  {
+    "exam_name": "MAT (Management Aptitude Test)",
+    "exam_eligibility": "Candidates must hold a bachelor’s degree in any discipline or be in the final year of graduation. There is no upper age limit, and multiple attempts are allowed. MAT scores are accepted by over 600 B-schools in India.",
+    "recomended_topics": "Syllabus includes Language Comprehension, Mathematical Skills, Data Analysis & Sufficiency, Intelligence & Critical Reasoning, and General Knowledge. Focus on quantitative aptitude, verbal ability, logical reasoning, and current affairs.",
+    "exam_details": "MAT is a 2.5-hour paper-based or computer-based test with 200 multiple-choice questions. Each section carries 40 questions, and there is no negative marking. Scores are valid for one year and sent to selected B-schools.",
+    "career_scope": "Qualifying MAT allows admission to numerous MBA/PGDM programs in India. Career paths include business management, corporate strategy, finance, marketing, operations, human resources, and entrepreneurship."
+  },
+  {
+    "exam_name": "SNAP (Symbiosis National Aptitude Test)",
+    "exam_eligibility": "Candidates must have a bachelor's degree with at least 50% marks (45% for reserved categories). Final-year students can also apply. There is no age limit or restriction on attempts.",
+    "recomended_topics": "Syllabus covers General English, Quantitative, Data Interpretation & Data Sufficiency, Analytical & Logical Reasoning, and Current Affairs & General Knowledge. Focus on comprehension, reasoning, and analytical skills.",
+    "exam_details": "SNAP is a computer-based test of 60 minutes, consisting of 60 multiple-choice questions. Each correct answer carries 1 mark, and 0.25 marks are deducted for incorrect answers. Some institutes may also consider group exercises or personal interviews.",
+    "career_scope": "Qualifying SNAP allows admission to Symbiosis institutes for MBA/PGDM programs. Career options include management consulting, marketing, finance, operations, human resources, and entrepreneurship."
+  },
+  {
+    "exam_name": "NMAT (NMIMS Management Aptitude Test)",
+    "exam_eligibility": "Candidates must hold a bachelor's degree with minimum 50% marks. Final-year students are eligible. There is no age limit or restriction on the number of attempts.",
+    "recomended_topics": "Syllabus includes Language Skills, Quantitative Skills, Logical Reasoning, and Data Interpretation. Emphasis on problem-solving, comprehension, critical reasoning, and numerical aptitude.",
+    "exam_details": "NMAT is a computer-based test of 120 minutes with 108 multiple-choice questions across three sections: Language Skills, Quantitative Skills, and Logical Reasoning & Data Interpretation. Each section has a separate score, and there is no negative marking for unattempted questions.",
+    "career_scope": "Qualifying NMAT allows admission to NMIMS and partner business schools. Career opportunities include management roles in finance, consulting, marketing, operations, HR, and entrepreneurship."
+  },
+  {
+    "exam_name": "CMAT (Common Management Admission Test)",
+    "exam_eligibility": "Candidates must have a bachelor's degree from a recognized university with minimum 50% marks. Final-year students can also apply. There is no upper age limit, and attempts are not restricted.",
+    "recomended_topics": "Syllabus includes Quantitative Techniques & Data Interpretation, Logical Reasoning, Language Comprehension, General Awareness, and Innovation & Entrepreneurship. Focus on analytical ability, comprehension, current affairs, and problem-solving.",
+    "exam_details": "CMAT is a computer-based test of 3 hours with 100 multiple-choice questions. Each correct answer carries 4 marks, and 1 mark is deducted for incorrect answers. Questions are divided into sections covering all major topics.",
+    "career_scope": "Qualifying CMAT allows admission to AICTE-approved management institutes for MBA/PGDM programs. Career paths include business management, consulting, finance, marketing, operations, entrepreneurship, and leadership roles."
+  },
+  {
+    "exam_name": "NDA (National Defence Academy Examination)",
+    "exam_eligibility": "Candidates must be unmarried male Indian citizens, aged 16.5 to 19.5 years. They must have passed or be appearing in Class 12 (10+2) with Physics and Mathematics for the Army, Navy, or Air Force wings. Female candidates are eligible only for certain entries as per latest government guidelines.",
+    "recomended_topics": "Syllabus includes Mathematics, General Ability Test (English, General Knowledge, Physics, Chemistry, General Science, History, Geography, and Current Events). Focus on NCERT fundamentals, reasoning skills, and English grammar and comprehension.",
+    "exam_details": "NDA is a pen-and-paper test with two papers: Mathematics (300 marks) and General Ability Test (600 marks). The duration is 2.5 hours per paper. Candidates clearing the written exam appear for the SSB (Services Selection Board) interview and medical examination.",
+    "career_scope": "Qualifying NDA allows direct entry into the Indian Army, Navy, or Air Force as a commissioned officer after completing training at the NDA and respective service academies. Career includes leadership roles, international exposure, defense operations, and long-term service benefits."
+  },
+  {
+    "exam_name": "CDS (Combined Defence Services Examination)",
+    "exam_eligibility": "Candidates must be unmarried Indian citizens (male or female as per entry criteria), aged 19–24 years for the Army wing, 19–23 years for Air Force and Navy wings. A graduate degree from a recognized university is required; final-year students can also apply. Physical and medical standards must be met.",
+    "recomended_topics": "Syllabus includes English, General Knowledge (History, Geography, Politics, Economics, General Science), and Elementary Mathematics. Focus on comprehension, reasoning, arithmetic, and awareness of current affairs.",
+    "exam_details": "CDS is a pen-and-paper test conducted in two parts: written examination (objective-type questions) and SSB interview. Marks from both written exam and SSB are combined to determine the final selection. Negative marking is applied for wrong answers in the written test.",
+    "career_scope": "Qualifying CDS leads to entry as an officer in the Indian Army, Navy, or Air Force, followed by training at respective academies. Career involves operational, administrative, and leadership responsibilities with structured promotions, pension, and opportunities for advanced training."
+  },
+  {
+    "exam_name": "AFCAT (Air Force Common Admission Test)",
+    "exam_eligibility": "Candidates must be Indian citizens aged 20–24 years for flying branch, 20–26 years for technical and ground duties. A graduate degree is required; engineering graduates are eligible for technical branches. Final-year students can apply subject to meeting criteria at joining.",
+    "recomended_topics": "Syllabus includes General Awareness, Verbal Ability in English, Numerical Ability, Reasoning and Military Aptitude Test (for flying branch). Emphasis on current affairs, physics fundamentals, logical reasoning, and comprehension.",
+    "exam_details": "AFCAT is a computer-based test of 2 hours with 100 multiple-choice questions, each carrying 3 marks. Negative marking of 1 mark for incorrect answers is applied. Shortlisted candidates undergo an AFSB (Air Force Selection Board) interview and medical examination.",
+    "career_scope": "Qualifying AFCAT allows selection as officers in the Indian Air Force in flying, technical, or ground duties. Career includes defense operations, strategic planning, leadership roles, technical management, and opportunities for specialization and international assignments."
+  },
+  {
+    "exam_name": "Indian Coast Guard Assistant Commandant Exam",
+    "exam_eligibility": "Candidates must be Indian citizens aged 20–25 years, unmarried, with a bachelor’s degree from a recognized university. Candidates must meet specified physical and medical standards. Only male candidates are eligible for certain branches, while female candidates may be eligible as per government notification.",
+    "recomended_topics": "Syllabus includes English, Reasoning & General Intelligence, Numerical Ability, General Knowledge & Current Affairs. Focus on comprehension, analytical skills, arithmetic, and awareness of maritime and defense-related topics.",
+    "exam_details": "The exam is a written computer-based test followed by a Physical Fitness Test (PFT) and Interview. The written test consists of objective multiple-choice questions covering all sections. Candidates clearing written and PFT proceed to an interview and medical examination.",
+    "career_scope": "Qualifying candidates are appointed as Assistant Commandants in the Indian Coast Guard. Career includes maritime security, search and rescue, law enforcement at sea, disaster management, and opportunities for advanced training, promotions, and leadership roles in coastal defense."
+  },
+  {
+    "exam_name": "CLAT (Common Law Admission Test)",
+    "exam_eligibility": "For undergraduate (UG) programs, candidates must have passed 10+2 or equivalent with at least 45% marks (40% for SC/ST). For postgraduate (PG) LLM programs, a law degree is required. There is no age limit for applying.",
+    "recomended_topics": "Syllabus includes English Language, Current Affairs including General Knowledge, Legal Aptitude, Logical Reasoning, and Elementary Mathematics. Emphasis on reading comprehension, critical reasoning, and understanding basic legal principles.",
+    "exam_details": "CLAT UG is a 2-hour online test with 150 multiple-choice questions. Each correct answer carries 1 mark, and 0.25 marks are deducted for incorrect answers. Questions are designed to test comprehension, legal aptitude, reasoning, and general awareness. PG CLAT has 100 multiple-choice questions focused on law subjects.",
+    "career_scope": "Qualifying CLAT allows admission to National Law Universities (NLUs) for LLB/BA LLB programs. Career paths include legal practice, judiciary services, corporate law, research, policy-making, academia, and work with government or NGOs. Top rankers may pursue international law programs."
+  },
+  {
+    "exam_name": "AILET (All India Law Entrance Test)",
+    "exam_eligibility": "For undergraduate admission, candidates must have passed 10+2 or equivalent with minimum 50% marks (45% for reserved categories). For LLM programs, candidates must have a law degree with minimum 50% marks. There is no age limit specified.",
+    "recomended_topics": "Syllabus includes English, General Knowledge, Legal Reasoning, Elementary Mathematics, and Logical Reasoning. Focus on comprehension, legal aptitude, analytical skills, and awareness of current affairs and legal developments.",
+    "exam_details": "AILET UG is a 90-minute test with 150 multiple-choice questions covering all sections. Negative marking of 0.25 marks is applied for incorrect answers. AILET PG consists of 100 multiple-choice questions on law subjects.",
+    "career_scope": "Qualifying AILET allows admission to the National Law University, Delhi (NLU Delhi) for UG and PG programs. Career opportunities include legal practice, corporate law, judiciary services, research, policy-making, and higher studies in India or abroad."
+  },
+  {
+    "exam_name": "LSAT India (Law School Admission Test India)",
+    "exam_eligibility": "Candidates must have completed or be appearing for 10+2 for undergraduate programs. For postgraduate programs, a law degree is required. There is no upper age limit, and candidates can attempt multiple times.",
+    "recomended_topics": "Syllabus includes Logical Reasoning, Analytical Reasoning, Reading Comprehension, and Legal Reasoning. Emphasis is on problem-solving, critical thinking, and comprehension of complex passages.",
+    "exam_details": "LSAT India is a 2.5-hour online test with sections on Logical Reasoning, Analytical Reasoning, Reading Comprehension, and an unscored Writing section. Each question carries 1 mark, and there is no negative marking.",
+    "career_scope": "Qualifying LSAT India enables admission to participating law schools in India for UG and PG programs. Career options include legal practice, judiciary, corporate law, policy research, academia, and consultancy."
+  },
+
+  {
+    "exam_name": "NIFT Entrance Exam (National Institute of Fashion Technology)",
+    "exam_eligibility": "Candidates must have completed 10+2 or equivalent examination for undergraduate programs. For postgraduate programs, a bachelor’s degree in any discipline is required. There is no age limit, and multiple attempts are allowed.",
+    "recomended_topics": "Syllabus includes Quantitative Ability, Communication Ability, English Comprehension, Analytical Ability, General Knowledge & Current Affairs, and Creative Ability Test (CAT) involving design, visualization, and drawing skills. Emphasis is on creativity, aesthetics, and design thinking.",
+    "exam_details": "NIFT Entrance Exam consists of a Creative Ability Test (CAT) and General Ability Test (GAT). For PG programs, a Situation Test may be conducted to assess practical skills. CAT evaluates drawing, visualization, and innovation, while GAT covers general aptitude. Each stage is scored, and combined scores determine selection.",
+    "career_scope": "Qualifying NIFT allows admission to fashion design, textile design, accessory design, and management programs. Career opportunities include fashion designing, textile industry, product design, visual merchandising, fashion marketing, and entrepreneurship."
+  },
+  {
+    "exam_name": "NID DAT (National Institute of Design – Design Aptitude Test)",
+    "exam_eligibility": "For undergraduate programs, candidates must have completed 10+2 or equivalent. For postgraduate programs, a bachelor’s degree in any discipline is required. There is no age limit, and multiple attempts are allowed.",
+    "recomended_topics": "Syllabus includes Visualization Skills, Design Thinking, Creativity, Observation, and Problem-Solving. Emphasis on sketching, innovation, and conceptual understanding of design.",
+    "exam_details": "NID DAT consists of a Design Aptitude Test (Prelims and Mains). Prelims assess drawing, design awareness, and creativity, while Mains include studio tests, personal interviews, and portfolio reviews. Scores from both rounds determine admission.",
+    "career_scope": "Qualifying NID DAT allows admission to B.Des and M.Des programs. Career opportunities include industrial design, product design, UX/UI design, interior design, graphic design, and creative consultancy."
+  },
+  {
+    "exam_name": "UCEED (Undergraduate Common Entrance Examination for Design)",
+    "exam_eligibility": "Candidates must have passed 10+2 or equivalent with at least 50% marks. Final-year students can also apply. There is no age restriction, and multiple attempts are permitted.",
+    "recomended_topics": "Syllabus includes Visualization and Spatial Ability, Observation and Design Sensitivity, Environmental and Social Awareness, Analytical and Logical Reasoning, Language, and Creativity. Focus on conceptual thinking and problem-solving.",
+    "exam_details": "UCEED is a 3-hour computer-based test with three sections: Part A (objective questions on visual, verbal, and analytical ability), Part B (drawing section to test design and creativity), and Part C (evaluated for creativity and design aptitude).",
+    "career_scope": "Qualifying UCEED allows admission to B.Des programs at IITs and other participating institutes. Career paths include industrial design, fashion and textile design, product design, UX/UI design, interior design, and creative consulting."
+  },
+  {
+    "exam_name": "NCHM JEE (National Council for Hotel Management Joint Entrance Examination)",
+    "exam_eligibility": "Candidates must have passed 10+2 or equivalent with English as a subject and at least 50% aggregate marks (45% for SC/ST). Age should be 17–25 years. Final-year students can apply, provided they complete the qualifying exam before admission.",
+    "recomended_topics": "Syllabus includes English Language, Numerical Ability & Analytical Aptitude, Reasoning & Logical Deduction, General Knowledge & Current Affairs, and Hospitality & Hotel Management basics. Focus on comprehension, arithmetic, reasoning, and understanding of hospitality industry concepts.",
+    "exam_details": "NCHM JEE is a computer-based test of 3 hours with 200 multiple-choice questions. Each correct answer carries 4 marks, and 1 mark is deducted for wrong answers. Sections include English, numerical ability, reasoning, GK, and domain-specific questions on hospitality.",
+    "career_scope": "Qualifying NCHM JEE allows admission to B.Sc programs in Hospitality & Hotel Administration at affiliated institutes. Career opportunities include hotel management, hospitality operations, food and beverage management, tourism, event management, and luxury hotel chains."
+  },
+{
+    "exam_name": "CTET (Central Teacher Eligibility Test)",
+    "exam_eligibility": "Candidates must have passed Senior Secondary (or equivalent) with at least 50% marks and a 2-year Diploma in Elementary Education (D.El.Ed) or B.Ed. For general category, minimum marks are 50%, with relaxation for SC/ST/OBC/PwD. There is no upper age limit.",
+    "recomended_topics": "Syllabus includes Child Development & Pedagogy, Language I & II, Mathematics, Environmental Studies, and Teaching Aptitude. Emphasis on understanding educational psychology, pedagogy, and subject knowledge for teaching classes I–VIII.",
+    "exam_details": "CTET consists of two papers: Paper I for teaching classes I–V and Paper II for teaching classes VI–VIII. Each paper has 150 multiple-choice questions, 1 mark each, with no negative marking. Duration is 2 hours 30 minutes per paper.",
+    "career_scope": "Qualifying CTET is mandatory for appointment as teachers in central government schools (KVS, NVS, and others). It enhances eligibility for state government and private schools and opens opportunities for teacher training, educational consultancy, and academic leadership roles."
+  },
+  {
+    "exam_name": "TET (Teacher Eligibility Test – State Level)",
+    "exam_eligibility": "Candidates must have passed Senior Secondary or equivalent with a diploma in elementary education or B.Ed, depending on the state-specific criteria. Minimum marks and age limits vary by state.",
+    "recomended_topics": "Syllabus includes Child Development & Pedagogy, Language, Mathematics, Environmental Studies, and Teaching Aptitude. Focus is on pedagogy, subject knowledge, and classroom management.",
+    "exam_details": "TET is conducted by individual states and generally consists of Paper I (for primary teachers) and Paper II (for upper primary teachers). Each paper includes multiple-choice questions, usually 150 questions, with a duration of 2.5 hours. Negative marking varies by state.",
+    "career_scope": "Qualifying TET allows recruitment as teachers in state government schools for primary and upper primary levels. It also enhances eligibility for private schools and teaching roles in educational institutions."
+  },
+  {
+    "exam_name": "NIOS Teacher Training Programs (NTT/CTT)",
+    "exam_eligibility": "Candidates must have completed secondary or senior secondary education and meet the specific eligibility for the National Institute of Open Schooling teacher training programs. Age criteria may apply as per program guidelines.",
+    "recomended_topics": "Syllabus includes Educational Psychology, Pedagogy, Teaching Methodologies, Communication Skills, and Subject Knowledge. Focus on practical teaching skills, lesson planning, and instructional design.",
+    "exam_details": "Assessment includes written examinations, practical teaching demonstrations, and portfolio submissions. The duration and structure depend on the specific teacher training course.",
+    "career_scope": "Completing NIOS teacher training programs enables candidates to work as trained teachers in open schooling, special education, and other government and private teaching institutions. It also opens opportunities in curriculum design and teacher training roles."
+  },
+  {
+    "exam_name": "Uttarakhand/State Level School Teacher Recruitment Exams",
+    "exam_eligibility": "Candidates must hold a bachelor’s degree in education (B.Ed) or equivalent, along with state-specific qualifications. Minimum marks and age limits are as per state government rules.",
+    "recomended_topics": "Syllabus includes General Knowledge, Language Proficiency, Pedagogy, Subject-Specific Knowledge, and Teaching Aptitude. Emphasis on classroom management, lesson planning, and state curriculum awareness.",
+    "exam_details": "State-level teacher recruitment exams are usually written objective-type tests, sometimes followed by interviews or teaching demonstrations. Duration is 2–3 hours, with 100–150 multiple-choice questions.",
+    "career_scope": "Qualifying these exams allows recruitment as teachers in government schools within the state. It provides career stability, promotions, training opportunities, and eligibility for leadership positions in school administration."
+  },
+  {
+    "exam_name": "NUEPA/DIET Teacher Recruitment Exams",
+    "exam_eligibility": "Candidates must have completed graduation and teacher training programs recognized by the state or central government. Age and experience criteria vary by state.",
+    "recomended_topics": "Syllabus covers Child Development, Pedagogy, Educational Psychology, Subject Knowledge, Language Proficiency, and Teaching Methods. Focus on inclusive education, teaching methodologies, and assessment techniques.",
+    "exam_details": "Exams usually include written tests (objective and descriptive), teaching demonstrations, and interviews. The structure and duration depend on the recruiting body and state policies.",
+    "career_scope": "Successful candidates are recruited as teachers in government-run DIETs (District Institutes of Education and Training), central schools, or state education departments. It provides opportunities for professional growth, specialized teaching roles, and positions in educational administration."
+  },
+ {
+    "exam_name": "GMAT (Graduate Management Admission Test)",
+    "exam_eligibility": "Candidates must hold a bachelor’s degree or equivalent in any discipline. There is no age limit, and candidates can take the exam multiple times. Final-year students can also apply.",
+    "recomended_topics": "Syllabus includes Analytical Writing Assessment, Integrated Reasoning, Quantitative Reasoning, and Verbal Reasoning. Emphasis is on problem-solving, data interpretation, critical reasoning, and grammar.",
+    "exam_details": "GMAT is a computer-adaptive test of approximately 3.5 hours. It consists of four sections: Analytical Writing, Integrated Reasoning, Quantitative, and Verbal. Scores range from 200–800, and each section has individual scoring.",
+    "career_scope": "Qualifying GMAT allows admission to international business schools for MBA and specialized management programs. Career opportunities include management consulting, finance, marketing, operations, and leadership roles globally."
+  },
+  {
+    "exam_name": "GRE (Graduate Record Examination)",
+    "exam_eligibility": "Candidates must have a bachelor’s degree or be in the final year of undergraduate study. There is no age limit, and multiple attempts are allowed. GRE is mainly for admission to graduate programs abroad.",
+    "recomended_topics": "Syllabus includes Verbal Reasoning, Quantitative Reasoning, and Analytical Writing. Focus on vocabulary, reading comprehension, algebra, geometry, data analysis, critical thinking, and essay writing.",
+    "exam_details": "GRE is a computer-based or paper-based test lasting around 3 hours 45 minutes. It has three sections: Verbal Reasoning (two sections), Quantitative Reasoning (two sections), and Analytical Writing (two essays). Scoring ranges from 130–170 for Verbal and Quantitative and 0–6 for Analytical Writing.",
+    "career_scope": "Qualifying GRE is required for admission to master’s or doctoral programs abroad, particularly in the US, Canada, and Europe. Careers include research, academia, engineering, business analytics, and global professional opportunities."
+  },
+  {
+    "exam_name": "IELTS (International English Language Testing System)",
+    "exam_eligibility": "There are no formal eligibility requirements. It is open to anyone who wants to study, work, or migrate to English-speaking countries. Candidates should have sufficient English proficiency to attempt the test.",
+    "recomended_topics": "Syllabus includes Listening, Reading, Writing, and Speaking. Focus on comprehension, vocabulary, grammar, pronunciation, essay writing, and communication skills.",
+    "exam_details": "IELTS is a 2 hour 45 minute test, consisting of four modules: Listening (40 minutes), Reading (60 minutes), Writing (60 minutes), and Speaking (11–14 minutes). Scores are reported on a 9-band scale for each module and overall.",
+    "career_scope": "IELTS scores are used for university admissions, professional registration, and immigration purposes in countries like the UK, Australia, Canada, and New Zealand. It enhances global study and work opportunities."
+  },
+  {
+    "exam_name": "TOEFL (Test of English as a Foreign Language)",
+    "exam_eligibility": "There is no formal eligibility; it is open to anyone seeking to study in English-speaking universities. Candidates should have intermediate to advanced English proficiency.",
+    "recomended_topics": "Syllabus covers Reading, Listening, Speaking, and Writing. Focus is on academic English, comprehension, essay writing, grammar, vocabulary, and verbal communication.",
+    "exam_details": "TOEFL iBT is a computer-based test lasting about 3 hours, covering Reading, Listening, Speaking, and Writing sections. Each section is scored individually, with a total score range of 0–120.",
+    "career_scope": "TOEFL scores are required for admission to universities abroad, particularly in the US and Canada. They support academic and professional pursuits in international settings and scholarship opportunities."
+  },
+  {
+    "exam_name": "IELTS UKVI / PTE Academic",
+    "exam_eligibility": "Open to candidates aiming for study or work visas in English-speaking countries. No formal age or education requirements, but English proficiency is necessary.",
+    "recomended_topics": "Syllabus is similar to IELTS, including Listening, Reading, Writing, and Speaking. PTE Academic additionally evaluates integrated skills and English fluency.",
+    "exam_details": "IELTS UKVI and PTE Academic are computer-based tests lasting 2–3 hours. Scores are reported on band scores (IELTS) or scaled scores (PTE). Both assess listening, reading, speaking, and writing abilities.",
+    "career_scope": "These exams are required for immigration, student visas, and professional registration in countries like the UK, Australia, and New Zealand. High scores facilitate admission, employment, and global mobility."
+  }
+
+]
