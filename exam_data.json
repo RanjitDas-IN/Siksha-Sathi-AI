@@ -1,4 +1,95 @@
 [
+{
+    "exam_name": "APSC CCE (Combined Competitive Examination)",
+    "exam_eligibility": "Candidates must be graduates from any recognized university and must be between 21 to 38 years of age as of January 1 of the examination year. Age relaxations apply for reserved categories.",
+    "recommended_topics": "General Studies, Indian Polity, Economy, Geography, History, Assam's Culture and Economy, Ethics, and Essay Writing.",
+    "exam_details": "The APSC CCE consists of three stages: Preliminary Examination (Objective Type), Mains Examination (Descriptive Type), and Interview. The Prelims comprises two papers of 200 marks each. The Mains includes six papers totaling 1680 marks, followed by a 275-mark Interview.",
+    "career_scope": "Successful candidates are appointed to various administrative services such as Assam Civil Services, Assam Police Service, and Assam Land & Revenue Service, among others."
+  },
+  {
+    "exam_name": "Assam Police Recruitment (Sub-Inspector & Constable)",
+    "exam_eligibility": "Candidates must be Indian citizens, have passed the 10th or 12th standard from a recognized board, and meet the age criteria specified in the recruitment notification. Physical standards and physical efficiency tests are also required.",
+    "recommended_topics": "General Knowledge, Logical Reasoning, Elementary Arithmetic, General English, and Assam's History and Culture.",
+    "exam_details": "The selection process includes Physical Standard Test (PST), Physical Efficiency Test (PET), Written Test (Objective Type), and Document Verification. The Written Test covers subjects like General Knowledge, Reasoning, English, and Assam's History.",
+    "career_scope": "Selected candidates are appointed to various positions within the Assam Police, including Sub-Inspector and Constable roles."
+  },
+  {
+    "exam_name": "Assam Direct Recruitment Examination (ADRE)",
+    "exam_eligibility": "Eligibility varies based on the specific Grade III or Grade IV post. Generally, candidates must have passed the 10th, 12th, or Bachelor's degree from a recognized board or university, and meet the age criteria specified in the recruitment notification.",
+    "recommended_topics": "General Knowledge, Logical Reasoning, General Mathematics, General English, and Assam's History and Culture.",
+    "exam_details": "The ADRE consists of a written examination followed by skill tests, driving tests, or oral tests, depending on the post. The written exam is OMR-based with negative marking.",
+    "career_scope": "Successful candidates are appointed to various Grade III and Grade IV posts in different departments of the Assam Government."
+  },
+  {
+    "exam_name": "APSC Junior Engineer (JE) Civil",
+    "exam_eligibility": "Candidates must possess a Diploma in Civil Engineering from a recognized institution and must be between 18 to 38 years of age as of January 1 of the examination year.",
+    "recommended_topics": "Surveying, Structural Engineering, Construction Materials, Geotechnical Engineering, Transportation Engineering, and Environmental Engineering.",
+    "exam_details": "The JE exam comprises two papers: Paper-I (General English & General Awareness) and Paper-II (Civil Engineering). Each paper is of 100 marks, and the duration of each paper is 2 hours.",
+    "career_scope": "Selected candidates are appointed as Junior Engineers in various departments such as Public Works Department, Water Resources Department, and Assam Police Housing Corporation."
+  },
+  {
+    "exam_name": "Assam Engineering Services Recruitment Board (AESRB) Assistant Professors",
+    "exam_eligibility": "Candidates must have a Master's degree in the relevant engineering discipline with at least 55% marks and must have qualified in the National Eligibility Test (NET) or similar accredited test.",
+    "recommended_topics": "Subject-specific topics as per the Master's degree curriculum, teaching methodology, and research aptitude.",
+    "exam_details": "The selection process includes a written examination, followed by a teaching proficiency test and document verification.",
+    "career_scope": "Selected candidates are appointed as Assistant Professors in Government Engineering Colleges in Assam."
+  },
+  {
+    "exam_name": "Assam Teacher Eligibility Test (TET) cum Recruitment Test",
+    "exam_eligibility": "Candidates must have a Bachelor's degree in the relevant subject with at least 50% marks and a 2-year Diploma in Elementary Education or a 4-year Bachelor of Elementary Education (B.El.Ed). Age limit is between 21 to 38 years, with relaxations for reserved categories.",
+    "recommended_topics": "Pedagogy, General English, General Mathematics (10th Standard), About Assam and its People, General Studies and Current Affairs.",
+    "exam_details": "The exam consists of multiple-choice questions totaling 140 marks. The subjects include Pedagogy (50 marks), About Assam and its People (35 marks), General Mathematics (15 marks), General English (30 marks), and General Studies and Current Affairs (10 marks).",
+    "career_scope": "Successful candidates are eligible for recruitment as Graduate Teachers in Government Secondary Schools across Assam."
+  },
+  {
+    "exam_name": "Directorate of Secondary Education (DSE) Assam Teacher Recruitment",
+    "exam_eligibility": "Candidates must have a Graduate or Post Graduate degree in the relevant subject with a B.Ed. degree. Age limit is typically between 21 to 38 years, with relaxations for reserved categories.",
+    "recommended_topics": "Subject-specific knowledge, Pedagogy, General English, General Studies, and Current Affairs.",
+    "exam_details": "The recruitment process includes a written examination followed by an interview. The written test assesses subject knowledge, teaching aptitude, and general awareness.",
+    "career_scope": "Selected candidates are appointed as Graduate or Post Graduate Teachers in Government Secondary Schools across Assam."
+  },
+  {
+    "exam_name": "Directorate of Health Services (DHS) Assam Recruitment",
+    "exam_eligibility": "Candidates must possess a Graduate degree in any discipline from a recognized university and a minimum of 6 months diploma in Computer Application. Age limit is between 18 to 40 years, with relaxations for reserved categories.",
+    "recommended_topics": "General Knowledge, Reasoning, General English, Numerical Aptitude, and Current Affairs.",
+    "exam_details": "The recruitment process includes a written examination followed by a skill test and document verification. The written test assesses general knowledge, reasoning ability, and basic computer skills.",
+    "career_scope": "Selected candidates are appointed to various Grade-III (Non-Technical) posts such as Health Educator, Junior Assistant, and Basic Health Worker in different health institutions across Assam."
+  },
+  {
+    "exam_name": "Assam Combined Entrance Examination (CEE)",
+    "exam_eligibility": "Candidates must have passed the 12th standard (or equivalent) with Physics, Chemistry, and Mathematics/Biology. Minimum marks: 50% for General category and 45% for reserved categories. Age limit is generally 17 to 21 years.",
+    "recommended_topics": "Physics: Mechanics, Optics, Electrodynamics; Chemistry: Physical, Organic, Inorganic; Mathematics: Algebra, Calculus, Trigonometry; Biology (if opting for B.Tech/B.E. in Biotechnology).",
+    "exam_details": "CEE is a pen-and-paper test with objective-type questions. The exam duration is 3 hours. It covers Physics, Chemistry, Mathematics, and occasionally Biology depending on the course applied for. Merit list is prepared based on marks scored.",
+    "career_scope": "Qualifying candidates can take admission in government and private engineering colleges in Assam for B.Tech/B.E courses across Civil, Mechanical, Electrical, Electronics, and Biotechnology streams."
+  },
+  {
+    "exam_name": "Assam Engineering Services Recruitment Board (AESRB) Technical Posts",
+    "exam_eligibility": "Candidates must have a Bachelor's degree or Diploma in the relevant engineering discipline from a recognized university/institution. Age limit is typically 18 to 38 years with relaxations for reserved categories.",
+    "recommended_topics": "Discipline-specific engineering topics (Civil, Mechanical, Electrical, Electronics), General Awareness, Reasoning, Basic English.",
+    "exam_details": "Selection typically involves a written examination covering engineering subjects and general aptitude, followed by an interview or skill assessment.",
+    "career_scope": "Selected candidates are appointed to technical positions in government engineering departments, such as Junior Engineers, Assistant Engineers, or other specialized technical roles."
+  },
+{
+    "exam_name": "State Level Recruitment Commission (SLRC) Exams",
+    "exam_eligibility": "Eligibility varies based on the post. For Grade III posts, candidates must have at least a 10th or 12th pass certificate. For Grade IV posts, minimal educational qualifications may apply. Age limits are generally 18 to 38 years with relaxations for reserved categories.",
+    "recommended_topics": "General Knowledge, Logical Reasoning, General English, Elementary Mathematics, Assam’s History and Culture.",
+    "exam_details": "The selection process typically involves a written examination followed by skill tests, physical tests, or interviews depending on the post. The written exam is usually objective type with negative marking.",
+    "career_scope": "Successful candidates are appointed to various Grade III and Grade IV positions across government departments in Assam."
+  },
+  {
+    "exam_name": "Assam Public Service Commission (APSC) Various Exams",
+    "exam_eligibility": "Candidates must be graduates from recognized universities. Age limit varies between 21 to 38 years with relaxations for reserved categories. Specific eligibility criteria may vary based on the exam.",
+    "recommended_topics": "General Studies, Indian Polity, Assam-specific knowledge, History, Geography, Economics, Current Affairs, Essay Writing.",
+    "exam_details": "Selection generally involves a three-stage process: Preliminary Exam (objective type), Main Exam (descriptive type), and Interview. Syllabus and marking scheme vary by specific exam.",
+    "career_scope": "Successful candidates are appointed to administrative services such as Assam Civil Services, Assam Police Service, and Assam Land & Revenue Service."
+  },
+  {
+    "exam_name": "TRC (ET-cum-Recruitment) Assam",
+    "exam_eligibility": "Candidates must have a Bachelor's degree in the relevant subject with at least 50% marks and either a 2-year Diploma in Elementary Education (D.El.Ed) or a 4-year Bachelor of Elementary Education (B.El.Ed). Age limit is generally 21 to 38 years with relaxations for reserved categories.",
+    "recommended_topics": "Pedagogy, Subject Knowledge for the relevant teaching subject, General English, General Mathematics (up to 10th standard), About Assam and its People, General Studies, and Current Affairs.",
+    "exam_details": "The exam is multiple-choice based, totaling 140 marks. It tests Pedagogy, Subject Knowledge, General English, Mathematics, and General Knowledge. Selection also considers merit and eligibility for teacher recruitment.",
+    "career_scope": "Qualifying candidates are eligible for recruitment as teachers in TRC schools or Government-aided schools across Assam, primarily for elementary and secondary levels."
+  },
   {
     "exam_name": "NTSE (National Talent Search Examination)",
     "exam_eligibility": "Students studying in Class 10 in recognized schools are eligible to appear for NTSE. Candidates must be Indian nationals, and there is no minimum percentage requirement to apply for the Stage 1 exam. However, qualifying marks from Stage 1 determine eligibility for Stage 2, which is conducted by NCERT. Students studying abroad in Class 10 can also apply directly for Stage 2 if they meet the prescribed eligibility norms.",

@@ -1,10 +1,11 @@
 # prompt for GPT
 
 # Data gneration Mood
-## Exam 1: UGAT
-## Exam 2: JMI Entrance
-## Exam 3: FTII JET
-## Exam 4: APSC
+## Exam 1: APSC CCE
+## Exam 2: Assam Police Recruitment
+## Exam 3: Assam Direct Recruitment Examination (ADRE)
+## Exam 4: APSC Junior Engineer (JE) Civil
+## Exam 5: Assam Engineering Services Recruitment Board (AESRB) Assistant Professors
 ## Goal: I want you to generate data as like demo in proper JSON format
 ## Demo: 
 ```json

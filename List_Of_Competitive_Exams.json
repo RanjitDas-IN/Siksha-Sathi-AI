@@ -1,4 +1,28 @@
 {
+    "State_Government_Exams": [
+      "APSC CCE (Combined Competitive Examination)",
+      "Assam Police Recruitment (Sub-Inspector & Constable)",
+      "Assam Direct Recruitment Examination (ADRE)",
+      "APSC Junior Engineer (JE) Civil",
+      "Assam Engineering Services Recruitment Board (AESRB) Assistant Professors"
+    ],
+    "Health_and_Education_Exams": [
+      "TET: Teachers eligibility chcek",
+      "Directorate of Secondary Education (DSE) Assam Teacher Recruitment",
+      "Directorate of Health Services (DHS) Assam Recruitment"
+    ],
+    "Engineering_and_Technical_Exams": [
+      "Assam Combined Entrance Examination (CEE)",
+      "Assam Engineering Services Recruitment Board (AESRB) Technical Posts"
+    ],
+    "Teaching_and_Eligibility_Exams": [
+      "Teacher Eligibility Test (TET) Assam",
+      "TET-cum-Recruitment (TCR) Assam"
+    ],
+    "Public_Sector_and_Other_Exams": [
+      "State Level Recruitment Commission (SLRC) Exams",
+      "Assam Public Service Commission (APSC) Various Exams"
+    ],
   "After_10th_or_12th": [
     "NTSE (National Talent Search Examination)",
     "KVPY (Kishore Vaigyanik Protsahan Yojana)",
