@@ -1,1 +1,18 @@
-exam_name, exam_eligibility, recomended_topics, exam_details, description, career_scope
+# prompt for GPT
+
+# Data gneration Mood
+## Exam 1: UGAT
+## Exam 2: JMI Entrance
+## Exam 3: FTII JET
+## Exam 4: APSC
+## Goal: I want you to generate data as like demo in proper JSON format
+## Demo: 
+```json
+  {
+    "exam_name": "NEET UG (National Eligibility cum Entrance Test)",
+    "exam_eligibility": "To be eligible for NEET UG, candidates must be at least 17 years old by December 31 of the admission year and have passed their 12th-grade exams with Physics, Chemistry, Biology, and English. They must meet minimum marks: 50% for General, 40% for SC/ST/OBC, and 45% for PwD candidates. There is no upper age limit, and candidates can attempt the exam any number of times as per the latest guidelines.",
+    "recomended_topics": "Important topics include Human Physiology, Genetics, Plant Physiology, and Organic Chemistry for Biology and Chemistry. Physics topics cover Mechanics, Electrodynamics, Optics, and Thermodynamics. Emphasis is on NCERT concepts, diagrams, and conceptual problem solving.",
+    "exam_details": "NEET UG is a pen-and-paper test consisting of 180 multiple-choice questions: 90 from Biology, 45 from Physics, and 45 from Chemistry. Each correct answer awards 4 marks, and incorrect answers carry a 1-mark penalty. Total exam duration is 3 hours.",
+    "career_scope": "NEET qualifying candidates can pursue MBBS, BDS, AYUSH courses (BAMS, BHMS, BUMS), veterinary science, pharmacy, and allied health professions. Opportunities exist in clinical practice, medical research, public health, healthcare administration, and higher studies abroad."
+  },
+```

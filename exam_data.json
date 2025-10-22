@@ -294,6 +294,62 @@
     "recomended_topics": "Syllabus is similar to IELTS, including Listening, Reading, Writing, and Speaking. PTE Academic additionally evaluates integrated skills and English fluency.",
     "exam_details": "IELTS UKVI and PTE Academic are computer-based tests lasting 2–3 hours. Scores are reported on band scores (IELTS) or scaled scores (PTE). Both assess listening, reading, speaking, and writing abilities.",
     "career_scope": "These exams are required for immigration, student visas, and professional registration in countries like the UK, Australia, and New Zealand. High scores facilitate admission, employment, and global mobility."
+  },
+{
+    "exam_name": "RBI Grade B – Reserve Bank of India Grade B Officer Exam",
+    "exam_eligibility": "Candidates must be between 21 and 30 years old as of September 1, 2025. A minimum of 60% marks in Bachelor's degree or equivalent (50% for SC/ST/PwD) is required. For DEPR and DSIM posts, a Master's degree in Economics or Statistics is mandatory.",
+    "recommended_topics": "For Phase 1: General Awareness, Reasoning Ability, English Language, Quantitative Aptitude. For Phase 2: Economic and Social Issues, Finance and Management, English (Writing Skills).",
+    "exam_details": "The RBI Grade B exam consists of three phases: Phase 1 (Objective, 200 questions, 2 hours), Phase 2 (Objective & Descriptive, 300 marks, 5.5 hours), and an Interview (75 marks). Phase 1 includes General Awareness, Reasoning, English, and Quantitative Aptitude. Phase 2 includes Economic and Social Issues, Finance and Management, and English Writing Skills.",
+    "career_scope": "Successful candidates are appointed as Officers in Grade B (DR) in the Reserve Bank of India. They can work in various departments like DEPR (Department of Economic and Policy Research), DSIM (Department of Statistics and Information Management), and others, with opportunities for career advancement in India's central banking institution."
+  },
+  {
+    "exam_name": "IPMAT – Integrated Programme in Management Aptitude Test",
+    "exam_eligibility": "Candidates should have passed Standard XII/HSC or equivalent examination in 2023, 2024, or appearing in 2025. For IIM Indore, candidates should be born on or after August 1, 2005, with a relaxation of 5 years for SC/ST/PwD categories.",
+    "recommended_topics": "Quantitative Ability: Algebra, Arithmetic, Number Systems, Probability. Verbal Ability: Reading Comprehension, Vocabulary, Grammar. Logical Reasoning: Analytical Reasoning, Puzzles, Series.",
+    "exam_details": "The IPMAT exam assesses candidates' aptitude in areas such as Quantitative Ability, Verbal Ability, and Logical Reasoning. It typically consists of multiple-choice questions and is conducted online.",
+    "career_scope": "Candidates who clear IPMAT gain direct admission to the five-year Integrated Programme in Management at IIM Indore or Rohtak, leading to a Bachelor's degree followed by an MBA, preparing them for leadership roles in business and management."
+  },
+  {
+    "exam_name": "UCEED – Undergraduate Common Entrance Examination for Design",
+    "exam_eligibility": "Candidates should have passed Class XII (or equivalent) in the year 2025 or are appearing in the year 2026, in any stream (Science, Commerce, or Arts & Humanities) for the first time. Only those students who have passed Class XII (or equivalent) in the year 2025 or are appearing in the year 2026 are eligible to appear for UCEED 2026.",
+    "recommended_topics": "Visual Perception, Spatial Ability, Environmental and Social Awareness, Analytical and Logical Reasoning, Design Thinking, Drawing Skills.",
+    "exam_details": "UCEED consists of two parts: Part A (Computer-Based Test) and Part B (Sketching & Drawing Test). Part A includes Numerical Answer Type (NAT) Questions, Multiple-Select Questions (MSQ), and Multiple-Choice Questions (MCQ). Part B includes one subjective question (sketching-based) to be answered on paper.",
+    "career_scope": "UCEED-qualified candidates are eligible for admission to the Bachelor of Design (B.Des) programs at IIT Bombay, IIT Guwahati, IIT Hyderabad, and IIITDM Jabalpur, leading to careers in product design, user experience, animation, and other design-related fields."
+  },
+  {
+    "exam_name": "NCHMCT JEE – National Council for Hotel Management Joint Entrance Examination",
+    "exam_eligibility": "Candidates should have passed the 10+2 examination from a recognized board with English as one of the subjects. Candidates appearing in the qualifying examination can also apply.",
+    "recommended_topics": "Numerical Ability and Analytical Aptitude, Reasoning and Logical Deduction, General Knowledge and Current Affairs, English Language, Aptitude for the Service Sector.",
+    "exam_details": "NCHMCT JEE is an objective-type exam with one question paper consisting of 200 questions. The total duration is 3 hours. The exam is conducted in CBT mode, and the medium of examination is English and Hindi.",
+    "career_scope": "Candidates who qualify NCHMCT JEE can pursue a Bachelor's degree in Hotel Management and Catering Technology, leading to careers in hotel and hospitality management, food and beverage services, front office operations, and event management."
+  },
+{
+    "exam_name": "UGAT – Under Graduate Aptitude Test",
+    "exam_eligibility": "Candidates must have cleared 10+2 or equivalent examinations with at least 50% marks from a recognized board. Those candidates who are waiting for their result or appearing for the 10+2 examination are also eligible to apply.",
+    "recommended_topics": "English Language: Verbal Reasoning, Sentence completion, Fill In the Blanks, One word substitution, Contextual usage, Vocabulary, Sentence correction, Idioms, Analogies, Different usage of the same word, Jumbled paragraphs. Numerical and Data Analysis: Geometry, Work and time, Number system.",
+    "exam_details": "UGAT is a standardized test administered by AIMA for various undergraduate programs such as Integrated MBA (IMBA), BBA, BCA, BHM, B.Com, etc. The exam consists of multiple-choice questions covering English Language, Numerical and Data Analysis, Reasoning and Intelligence, and General Knowledge. The total duration is 2 hours, and the exam is conducted in both pen-and-paper and internet-based modes.",
+    "career_scope": "Successful candidates can pursue undergraduate programs in management, commerce, and hospitality, leading to careers in business administration, information technology, hotel management, and related fields."
+  },
+  {
+    "exam_name": "JMI Entrance Exam – Jamia Millia Islamia University Entrance Exam",
+    "exam_eligibility": "Eligibility criteria vary by program. For undergraduate programs, candidates should have passed the senior secondary school certificate or an equivalent examination with a minimum of 50% marks in aggregate of best 5-papers or in the subject concerned.",
+    "recommended_topics": "The syllabus includes subjects related to the specific program applied for, such as English, Mathematics, Science, and General Knowledge. The exam may consist of both objective and subjective questions, depending on the program.",
+    "exam_details": "The JMI Entrance Exam is conducted annually for various undergraduate and postgraduate programs offered at Jamia Millia Islamia University. The exam is conducted in offline mode at various exam centers. The question paper will contain objective/multiple-choice questions (MCQs) and subjective questions in some programs.",
+    "career_scope": "Candidates who clear the JMI Entrance Exam can pursue programs in fields such as engineering, humanities, social sciences, law, and management, leading to diverse career opportunities in academia, research, and industry."
+  },
+  {
+    "exam_name": "FTII JET – Film and Television Institute of India Joint Entrance Test",
+    "exam_eligibility": "For PG Diploma Courses (Film Wing): Bachelor's Degree in any discipline. For PG Diploma Courses (TV Wing): Bachelor's Degree in any discipline. For Acting Course: 10+2 or equivalent. Final year students are also eligible to apply.",
+    "recommended_topics": "The syllabus includes topics related to Arts & Crafts, Film & TV, Allied Arts, Literature, General Awareness, Environmental Awareness, and General Knowledge related to Art and culture and Media.",
+    "exam_details": "FTII JET is conducted for admission to various postgraduate diploma programs in film and television. The exam consists of a written test and an interview. The written test includes questions on general awareness, arts and crafts, and media-related topics.",
+    "career_scope": "Successful candidates can pursue careers in film and television production, direction, editing, cinematography, acting, and other related fields in the entertainment industry."
+  },
+  {
+    "exam_name": "APSC CCE – Assam Public Service Commission Combined Competitive Examination",
+    "exam_eligibility": "Candidates must be a permanent resident of Assam and should have a Bachelor's Degree from a recognized university. The age limit is generally between 21 and 38 years, with relaxations for reserved categories.",
+    "recommended_topics": "The syllabus includes General Studies, Indian and World Geography, Indian History, Indian Polity, Economic and Social Development, General Mental Ability, and current affairs.",
+    "exam_details": "APSC CCE consists of three stages: Preliminary Examination (Objective Type), Main Examination (Written & Interview Test). The Preliminary Examination consists of two objective-type General Studies question papers, each carrying 200 marks. The Main Examination includes written papers and an interview.",
+    "career_scope": "Candidates who qualify APSC CCE are appointed to various administrative posts in the Assam Government, such as Assam Civil Services, Police Services, and other allied services."
   }
 
 ]
