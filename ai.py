@@ -14,37 +14,15 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 
 data = """
-[
 {
-    "exam_name": "APSC CCE (Combined Competitive Examination)",
-    "exam_eligibility": "Candidates must be graduates from any recognized university and must be between 21 to 38 years of age as of January 1 of the examination year. Age relaxations apply for reserved categories.",
-    "recommended_topics": "General Studies, Indian Polity, Economy, Geography, History, Assam's Culture and Economy, Ethics, and Essay Writing.",
-    "exam_details": "The APSC CCE consists of three stages: Preliminary Examination (Objective Type), Mains Examination (Descriptive Type), and Interview. The Prelims comprises two papers of 200 marks each. The Mains includes six papers totaling 1680 marks, followed by a 275-mark Interview.",
-    "career_scope": "Successful candidates are appointed to various administrative services such as Assam Civil Services, Assam Police Service, and Assam Land & Revenue Service, among others."
-  },
-  {
-    "exam_name": "Assam Police Recruitment (Sub-Inspector & Constable)",
-    "exam_eligibility": "Candidates must be Indian citizens, have passed the 10th or 12th standard from a recognized board, and meet the age criteria specified in the recruitment notification. Physical standards and physical efficiency tests are also required.",
-    "recommended_topics": "General Knowledge, Logical Reasoning, Elementary Arithmetic, General English, and Assam's History and Culture.",
-    "exam_details": "The selection process includes Physical Standard Test (PST), Physical Efficiency Test (PET), Written Test (Objective Type), and Document Verification. The Written Test covers subjects like General Knowledge, Reasoning, English, and Assam's History.",
-    "career_scope": "Selected candidates are appointed to various positions within the Assam Police, including Sub-Inspector and Constable roles."
-  },
-  {
-    "exam_name": "Assam Direct Recruitment Examination (ADRE)",
-    "exam_eligibility": "Eligibility varies based on the specific Grade III or Grade IV post. Generally, candidates must have passed the 10th, 12th, or Bachelor's degree from a recognized board or university, and meet the age criteria specified in the recruitment notification.",
-    "recommended_topics": "General Knowledge, Logical Reasoning, General Mathematics, General English, and Assam's History and Culture.",
-    "exam_details": "The ADRE consists of a written examination followed by skill tests, driving tests, or oral tests, depending on the post. The written exam is OMR-based with negative marking.",
-    "career_scope": "Successful candidates are appointed to various Grade III and Grade IV posts in different departments of the Assam Government."
-  },
-  {
-    "exam_name": "APSC Junior Engineer (JE) Civil",
-    "exam_eligibility": "Candidates must possess a Diploma in Civil Engineering from a recognized institution and must be between 18 to 38 years of age as of January 1 of the examination year.",
-    "recommended_topics": "Surveying, Structural Engineering, Construction Materials, Geotechnical Engineering, Transportation Engineering, and Environmental Engineering.",
-    "exam_details": "The JE exam comprises two papers: Paper-I (General English & General Awareness) and Paper-II (Civil Engineering). Each paper is of 100 marks, and the duration of each paper is 2 hours.",
-    "career_scope": "Selected candidates are appointed as Junior Engineers in various departments such as Public Works Department, Water Resources Department, and Assam Police Housing Corporation."
-  }
-
-]
+  "id": "19a1168eb167f2e8",
+  "threadId": "19a1168eb167f2e8",
+  "from": "Ranjit Das <noreply@github.com>",
+  "to": "udaysubba2004@gmail.com",
+  "subject": "RanjitDas-IN invited you to RanjitDas-IN/Siksha-Sathi-AI",
+  "date": "Thu, 23 Oct 2025 07:11:19 -0700",
+  "body": "@RanjitDas-IN has invited you to collaborate on the RanjitDas-IN/Siksha-Sathi-AI repository.\r\n\r\n\r\nVisit https://github.com/RanjitDas-IN/Siksha-Sathi-AI/invitations to accept or decline this invitation.\r\n\r\nYou can also head over to https://github.com/RanjitDas-IN/Siksha-Sathi-AI to check out the repository or visit https://github.com/RanjitDas-IN to learn a bit more about @RanjitDas-IN.\r\n\r\nThis invitation will expire in 7 days.\r\n\r\nSome helpful tips:\r\n- If you get a 404 page, make sure you’re signed in as kisxo.\r\n- Too many emails from @RanjitDas-IN? You can block them by visiting\r\n  https://github.com/settings/blocked_users?block_user=RanjitDas-IN or report abuse at\r\n  https://github.com/contact/report-abuse?report=RanjitDas-IN\r\n\r\n---\r\nView it on GitHub:\r\nhttps://github.com/RanjitDas-IN/Siksha-Sathi-AI"
+}
 """
 
 
@@ -239,7 +217,7 @@ def ai(user_input: str, rag_data: str = '', user_data: str='', chat_history: str
     # return
     model, tokenizer, device = load_model_and_tokenizer(MODEL_NAME)
 
-    system_message = {"role": "system", "content": "You are a helpful assistant. Always respond in proper markdown (MD) formate.", "custom_data": rag_data}
+    system_message = {"role": "system", "content": "You are a helpful assistant. Always respond in english and clearly.", "custom_data": rag_data}
     conversation = [system_message]
     conversation.append({"role": "user", "content": user_input})
 
@@ -260,7 +238,10 @@ def ai(user_input: str, rag_data: str = '', user_data: str='', chat_history: str
     )
 
 
-user_input=f"## Use the exam informations informations --- ## help me generate a todo list for exams bellow: {data}"
+user_input=f"""Use this raw email data, and create a summery in proper english (such that an small boy can understand).
+### Raw-Email: {data}
+
+"""
 
 # print(user_input)
 ai(user_input)
