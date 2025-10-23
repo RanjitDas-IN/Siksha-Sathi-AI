@@ -217,7 +217,7 @@ def ai(user_input: str, rag_data: str = '', user_data: str='', chat_history: str
     # return
     model, tokenizer, device = load_model_and_tokenizer(MODEL_NAME)
 
-    system_message = {"role": "system", "content": "You are a helpful assistant. Always respond in english and clearly.", "custom_data": rag_data}
+    system_message = {"role": "system", "content": "You are a helpful assistant. Always respond in english and clearly. Do not reply in markdown format", "custom_data": rag_data}
     conversation = [system_message]
     conversation.append({"role": "user", "content": user_input})
 
