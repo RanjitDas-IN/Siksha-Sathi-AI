@@ -10,5 +10,9 @@
 
 
 ## Steps:
+1. Install [requirment](requirements.txt)
 1. [Download](download_model.py) the model 
 
+2. Run [this script](plateform_independent.py)
+
+3. Start chating With dumbest AI 🤓, But fastest. (If you want smarter LLM, then collect money and buy NVDIA GPU 🤪)

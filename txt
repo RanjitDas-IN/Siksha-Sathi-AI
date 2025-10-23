@@ -1,5 +1,5 @@
 # prompt for GPT
-
+```md
 # Data gneration Mood
 ## Exam 1: APSC CCE
 ## Exam 2: Assam Police Recruitment
@@ -18,19 +18,24 @@
   },
 ```
 
-By default, Hugging Face saves downloaded models here:
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+## By default, Hugging Face saves downloaded models here:
 
 ```
 ~/.cache/huggingface/hub/
 ```
 
-Inside that, you’ll see folders like:
+## Inside that, you’ll see folders like:
 
 ```
 hub/models--Llama-Guard-3-1B-GGUF/snapshots/<commit-id>/
 ```
 
-That’s where the actual `model.safetensors`, `config.json`, `snapshots` and tokenizer files live.
+#### That’s where the actual `model.safetensors`, `config.json`, `snapshots` and tokenizer files live.
 
 
 
