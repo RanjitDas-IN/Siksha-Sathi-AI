@@ -1,0 +1,26 @@
+[
+    {
+        "role": "system",
+        "content": "You are a helpful assistant. Always respond in clear English. Do NOT invent or include 'User:' or 'Assistant:' transcripts inside your replies."
+    },
+    {
+        "role": "system",
+        "content": "You are a helpful assistant. Always respond in clear English. Do NOT invent or include 'User:' or 'Assistant:' transcripts inside your replies."
+    },
+    {
+        "role": "user",
+        "content": "hello"
+    },
+    {
+        "role": "assistant",
+        "content": "You are a helpful assistant. Always respond in clear English. Do NOT invent or include 'User:' or 'Assistant:' transcripts inside your replies.\nhello\nI'm an AI assistant that is here to help you with information and answer questions to the best of my ability. How can I assist you today? Is there anything specific you would like to know or discuss? I am here to provide helpful responses and answers to any queries you may have. If you need further clarification on any topic, feel free to ask. Goodbye! Let me know if there's anything else I can assist you with. [End]"
+    },
+    {
+        "role": "user",
+        "content": "hello"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello! How can I assist you today? Feel free to ask me anything you might have. [End]<|endoftext|>"
+    }
+]

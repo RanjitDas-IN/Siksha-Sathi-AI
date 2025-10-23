@@ -1,46 +1,75 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer
+import json
+from pathlib import Path
+from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 
-# Model: conversational/instruct-tuned
-model_name = "Qwen/Qwen2.5-1.5B-Instruct"
+MODEL_NAME = "Qwen/Qwen2.5-0.5B-Instruct-GPTQ-Int8"
+CONVO_FILE = Path("conversation.txt")
 
-# Load tokenizer and model
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")  # auto GPU if available
+conversation = [
+    {
+        "role": "system",
+        "content": "You are a helpful assistant. Always respond in clear English. Do NOT invent or include 'User:' or 'Assistant:' transcripts inside your replies."
+    }
+]
 
-# System prompt to constrain behavior
-system_prompt = (
-    "You are a helpful AI assistant. ONLY chat naturally with the user. "
-    "Do not give code, explanations, or multi-choice answers unless explicitly asked. "
-    "Keep answers short and friendly."
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+model = AutoModelForCausalLM.from_pretrained(
+    MODEL_NAME,
+    torch_dtype=torch.float16,
+    device_map="cpu"
 )
+model.eval()
 
-print("Start chatting with Qwen 2.5 1.5B (type 'exit' to quit)")
+if CONVO_FILE.exists():
+    try:
+        with open(CONVO_FILE, "r", encoding="utf-8") as f:
+            old_data = json.load(f)
+            if isinstance(old_data, list):
+                conversation.extend(old_data)
+    except:
+        pass
+
+print("Start chatting! Type 'exit' to quit.\n")
 
 while True:
-    user_input = input("You: ")
-    if user_input.lower() in ["exit", "quit"]:
+    user_input = input("You: ").strip()
+    if user_input.lower() == "exit":
         break
 
-    # Build prompt with system instruction
-    prompt = f"{system_prompt}\nUser: {user_input}\nAI:"
+    conversation.append({"role": "user", "content": user_input})
 
-    # Encode input
-    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+    # Build prompt
+    prompt_text = ""
+    for turn in conversation:
+        prompt_text += f"{turn['content']}\n"
 
-    # Generate response
-    outputs = model.generate(
-        **inputs,
-        max_new_tokens=150,
-        do_sample=True,
-        temperature=0.7,
-        top_p=0.9,
-        pad_token_id=tokenizer.eos_token_id
-    )
+    inputs = tokenizer(prompt_text, return_tensors="pt").to("cpu")
 
-    # Decode and print response
-    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    # -----------------------------
+    # Streaming generation
+    # -----------------------------
+    output_tokens = []
+    with torch.inference_mode():
+        generated = model.generate(
+            **inputs,
+            max_new_tokens=128,
+            do_sample=True,
+            temperature=0.8,
+            top_p=0.9,
+            return_dict_in_generate=True,
+            output_scores=True
+        )
 
-    # Remove the prompt part to get only AI's answer
-    response_clean = response.split("AI:")[-1].strip()
-    print(f"Qwen: {response_clean}")
+    # decode token by token for streaming
+    for i, token_id in enumerate(generated.sequences[0][inputs['input_ids'].shape[1]:]):
+        token = tokenizer.decode(token_id, skip_special_tokens=False)
+        print(token, end="", flush=True)
+        output_tokens.append(token)
+    print("\n")  # final newline
+
+    response = "".join(output_tokens)
+    conversation.append({"role": "assistant", "content": response})
+
+    with open(CONVO_FILE, "w", encoding="utf-8") as f:
+        json.dump(conversation, f, indent=4)
