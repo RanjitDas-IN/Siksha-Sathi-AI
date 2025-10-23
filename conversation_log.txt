@@ -1,3 +1,14 @@
 USER: hello dear
 
-Hello! How can I
+Hello! How can IUSER: helo
+
+Hello! How can I assist you today?
+
+ASSISTANT: Hello! How can I assist you today?
+
+USER: hello
+
+Hello! How can I assist you today?
+
+ASSISTANT: Hello! How can I assist you today?
+

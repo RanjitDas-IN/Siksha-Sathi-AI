@@ -15,7 +15,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 # -------------------------
 # Config
 # -------------------------
-MODEL_NAME = "Qwen/Qwen2.5-0.5B-Instruct-GPTQ-Int8"
+MODEL_NAME = "Qwen/Qwen2.5-0.5B-Instruct"
 LOG_FILE = "conversation_log.txt"
 REALTIME_TOKEN_LOG = True         # if True, append tokens to the log as they are generated
 CHUNK_SIZE = 1                    # 1 = token-by-token; increase for larger chunks
