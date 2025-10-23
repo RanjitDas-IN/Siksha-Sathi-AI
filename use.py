@@ -1,130 +1,257 @@
+#!/usr/bin/env python3
+"""
+Realtime token-by-token streaming with realtime log writes and an on_chunk hook
+you can replace with a websocket/SSE sender.
+
+- Streams tokens as `decoded_chunk` (the streaming boundary).
+- Writes token chunks to LOG_FILE as they arrive (mimics uploaded script).
+- Appends full user/assistant messages to LOG_FILE at end of turn.
+"""
 import os
+import time
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-# -------------------------
-# Settings
-# -------------------------
-MODEL_NAME = "Qwen/Qwen2.5-0.5B-Instruct-GPTQ-Int8"
+# ---------- Config ----------
+MODEL_NAME = "Qwen/Qwen2.5-0.5B-Instruct"  # change as needed
 LOG_FILE = "conversation_log.txt"
-MAX_TOTAL_NEW_TOKENS = 256  # total tokens assistant may produce for a reply
-CHUNK_SIZE = 1              # 1 => one token at a time (token-by-token streaming)
+CHUNK_SIZE = 1
+MAX_TOTAL_NEW_TOKENS = 512
 TEMPERATURE = 0.7
 TOP_P = 0.9
+SLEEP_BETWEEN_TOKENS = 0.0
 
-# -------------------------
-# Helpers: logging
-# -------------------------
+# ensure log exists
 if not os.path.exists(LOG_FILE):
     open(LOG_FILE, "w", encoding="utf-8").close()
 
-def log_message(role: str, content: str):
+def append_to_log(text: str):
     with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(f"{role.upper()}: {content}\n\n")
+        f.write(text)
+        f.flush()
 
-# -------------------------
-# Load model & tokenizer
-# -------------------------
-device = "cuda" if torch.cuda.is_available() else "cpu"
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-model = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
-model.to(device)
-model.eval()
+def log_message(role: str, content: str):
+    append_to_log(f"{role.upper()}: {content}\n\n")
 
-# Ensure a pad token exists (some models don't set it). If none, set to eos.
-if tokenizer.pad_token_id is None:
-    tokenizer.pad_token_id = tokenizer.eos_token_id
+# ---------- Model / tokenizer loader ----------
+def load_model_and_tokenizer(model_name: str, device: str = None):
+    if device is None:
+        if torch.cuda.is_available():
+            device = "cuda"
+        elif getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
+            device = "mps"
+        else:
+            device = "cpu"
 
-# -------------------------
-# Chat loop with simulated streaming
-# -------------------------
-system_message = {"role": "system", "content": "You are a helpful assistant. Always respond clearly."}
-conversation = [system_message]
+    dtype = torch.float16 if device in ("cuda", "mps") else torch.float32
 
-print("Type 'exit' or 'quit' to stop.\n")
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=dtype)
+    model.to(device)
+    model.eval()
 
-while True:
-    user_input = input("User: ").strip()
-    if user_input.lower() in ("exit", "quit"):
-        break
+    if tokenizer.pad_token_id is None:
+        tokenizer.pad_token_id = tokenizer.eos_token_id
 
-    # Append user into conversation and log
-    conversation.append({"role": "user", "content": user_input})
-    log_message("user", user_input)
+    return model, tokenizer, device
 
-    # Build tokenized prompt (keeps explicit roles)
+# ---------- Streaming generator ----------
+def stream_response_generator(
+    conversation: list,
+    model,
+    tokenizer,
+    device,
+    chunk_size: int = CHUNK_SIZE,
+    max_new_tokens: int = MAX_TOTAL_NEW_TOKENS,
+    temperature: float = TEMPERATURE,
+    top_p: float = TOP_P,
+    sleep_between_tokens: float = SLEEP_BETWEEN_TOKENS,
+):
+    """
+    Yields decoded_chunk strings as they arrive.
+    Caller is responsible for forwarding each chunk (e.g., ws.send(chunk)).
+    """
     inputs = tokenizer.apply_chat_template(
         conversation,
         add_generation_prompt=True,
         tokenize=True,
         return_dict=True,
-        return_tensors="pt"
+        return_tensors="pt",
     )
 
-    input_ids = inputs["input_ids"].to(device)              # shape: (1, seq_len)
-    attention_mask = inputs.get("attention_mask", None)
+    input_ids = inputs["input_ids"].to(device)
+    attention_mask = inputs.get("attention_mask")
     if attention_mask is None:
-        # Fallback: all ones
         attention_mask = torch.ones_like(input_ids, device=device)
     else:
         attention_mask = attention_mask.to(device)
 
-    # We'll iteratively extend generated_ids and attention mask
-    generated_ids = input_ids.clone()                       # (1, cur_len)
-    generated_attention_mask = attention_mask.clone()       # (1, cur_len)
-
-    # Prepare streaming print + logging buffer for assistant
-    print("Assistant: ", end="", flush=True)
-    assistant_buffer = ""
+    generated_ids = input_ids.clone()
+    generated_attention_mask = attention_mask.clone()
 
     total_generated = 0
     stop_early = False
 
     with torch.inference_mode():
-        while total_generated < MAX_TOTAL_NEW_TOKENS and not stop_early:
-            # Each call, ask the model to produce CHUNK_SIZE new tokens
+        while total_generated < max_new_tokens and not stop_early:
             outputs = model.generate(
                 input_ids=generated_ids,
                 attention_mask=generated_attention_mask,
-                max_new_tokens=CHUNK_SIZE,
+                max_new_tokens=chunk_size,
                 do_sample=True,
-                temperature=TEMPERATURE,
-                top_p=TOP_P,
+                temperature=temperature,
+                top_p=top_p,
                 pad_token_id=tokenizer.pad_token_id,
                 eos_token_id=tokenizer.eos_token_id,
-                use_cache=True
+                use_cache=True,
             )
-            # outputs shape: (1, new_total_seq_len)
+
             start_idx = generated_ids.shape[-1]
-            new_tokens = outputs[:, start_idx:]   # keep 2D: shape (1, new_len)
+            new_tokens = outputs[:, start_idx:]  # (1, new_len)
 
             if new_tokens.shape[-1] == 0:
-                # nothing new produced — break to avoid infinite loop
                 break
 
-            # Append new tokens to generated_ids (both 2D)
+            # extend generated_ids and attention mask
             generated_ids = torch.cat([generated_ids, new_tokens], dim=-1)
-
-            # Extend attention mask with ones for the newly generated tokens
             new_mask = torch.ones((generated_attention_mask.shape[0], new_tokens.shape[-1]),
                                   dtype=generated_attention_mask.dtype, device=device)
             generated_attention_mask = torch.cat([generated_attention_mask, new_mask], dim=-1)
 
-            # Decode only the newly generated tokens for streaming output
+            # ===== streaming boundary =====
             decoded_chunk = tokenizer.decode(new_tokens[0], skip_special_tokens=True, clean_up_tokenization_spaces=True)
-            print(decoded_chunk, end="", flush=True)
-            assistant_buffer += decoded_chunk
+            # yield the chunk so caller can forward it to frontend in realtime
+            yield decoded_chunk
+            # ==============================
 
             total_generated += new_tokens.shape[-1]
 
-            # Stop if EOS token was generated in the new tokens
+            # stop on EOS
             if (new_tokens == tokenizer.eos_token_id).any():
                 stop_early = True
                 break
 
-        # End streaming for this reply
-    print("\n")  # newline after assistant done
+            if sleep_between_tokens > 0:
+                time.sleep(sleep_between_tokens)
 
-    # Append assistant reply to conversation and log it
-    conversation.append({"role": "assistant", "content": assistant_buffer})
-    log_message("assistant", assistant_buffer)
+# ---------- Convenience wrapper that accepts an on_chunk callback ----------
+def stream_response_callback(
+    conversation: list,
+    model,
+    tokenizer,
+    device,
+    on_chunk,
+    chunk_size: int = CHUNK_SIZE,
+    max_new_tokens: int = MAX_TOTAL_NEW_TOKENS,
+    temperature: float = TEMPERATURE,
+    top_p: float = TOP_P,
+    sleep_between_tokens: float = SLEEP_BETWEEN_TOKENS,
+    realtime_token_log: bool = True,
+    log_file_path: str = LOG_FILE,
+):
+    """
+    Calls on_chunk(decoded_chunk) for every token-chunk produced.
+    Also writes chunks to the log file in realtime if realtime_token_log=True.
+    Returns the final assembled assistant string.
+    """
+    assistant_buffer = ""
+
+    # optionally open log file once for speed
+    token_log_file = None
+    if realtime_token_log:
+        token_log_file = open(log_file_path, "a", encoding="utf-8")
+
+    try:
+        for chunk in stream_response_generator(
+            conversation,
+            model,
+            tokenizer,
+            device,
+            chunk_size=chunk_size,
+            max_new_tokens=max_new_tokens,
+            temperature=temperature,
+            top_p=top_p,
+            sleep_between_tokens=sleep_between_tokens,
+        ):
+            # forward to user-provided callback (e.g., websocket send)
+            try:
+                on_chunk(chunk)
+            except Exception:
+                # if frontend send fails, propagate after cleanup
+                raise
+
+            assistant_buffer += chunk
+
+            # write chunk to log in realtime (no newline)
+            if token_log_file is not None:
+                token_log_file.write(chunk)
+                token_log_file.flush()
+    finally:
+        if token_log_file is not None:
+            token_log_file.write("\n\n")
+            token_log_file.close()
+
+    return assistant_buffer
+
+# ---------- Main realtime loop (console example) ----------
+def main():
+    model, tokenizer, device = load_model_and_tokenizer(MODEL_NAME)
+
+    system_message = {"role": "system", "content": "You are a helpful assistant. Always respond clearly."}
+    conversation = [system_message]
+
+    print("Type 'exit' or 'quit' to stop.\t-Ranjit, the creator\n")
+
+    while True:
+        try:
+            user_input = input("User: ").strip()
+        except (KeyboardInterrupt, EOFError):
+            print("\nExiting.")
+            break
+
+        if user_input.lower() in ("exit", "quit"):
+            print("Bye.")
+            break
+
+        # record user
+        conversation.append({"role": "user", "content": user_input})
+        log_message("user", user_input)
+
+        # define on_chunk to print and (optionally) forward to frontend
+        # Replace the body of `on_chunk` with websocket.send(...) or SSE publish
+        def on_chunk(chunk: str):
+            # console streaming (no newline)
+            print(chunk, end="", flush=True)
+            # If you had a websocket: websocket.send(chunk)
+            # If using asyncio websockets, make this an async wrapper or use an async queue.
+            # For front-end: stream via SSE or send each chunk as websocket message.
+
+        # call streaming wrapper which will also append tokens to LOG_FILE realtime
+        final_text = stream_response_callback(
+            conversation,
+            model,
+            tokenizer,
+            device,
+            on_chunk=on_chunk,
+            chunk_size=CHUNK_SIZE,
+            max_new_tokens=MAX_TOTAL_NEW_TOKENS,
+            temperature=TEMPERATURE,
+            top_p=TOP_P,
+            sleep_between_tokens=SLEEP_BETWEEN_TOKENS,
+            realtime_token_log=True,
+            log_file_path=LOG_FILE,
+        )
+
+        # newline after assistant finishes
+        print("\n")
+
+        # append assistant reply to conversation & to log (full message)
+        conversation.append({"role": "assistant", "content": final_text})
+        log_message("assistant", final_text)
+
+        # show final assembled (optional)
+        print("[FINAL ASSEMBLED RESPONSE -Ranjit Mather Fucker]\n", final_text)
+        print("\n---\n")
+
+if __name__ == "__main__":
+    main()
