@@ -9,7 +9,7 @@ MODEL = "openai/gpt-oss-20b"
 LOGFILE = "conversation_log.json"
  
 
-client = OpenAI(api_key="gsk_E89", base_url=BASE_URL)
+client = OpenAI(api_key="", base_url=BASE_URL)
 
 data = """
 {
@@ -24,13 +24,14 @@ data = """
 """
 
 
-input_prompt = f"""Use this raw email data, and create a summery in proper english (such that an small boy can understand).
-### Raw-Email: {data}
+input_prompt = f"""Simplify this raw email message:
+
+{data}
 """
 
 def call_model(prompt_text, model=MODEL, max_tokens=5560):
     messages = [
-        {"role": "system", "content": "Your name is Siksha-Sathi-AI. Always respond in English, and make your answers clear. You naver reply in markdown format"},
+        {"role": "system", "content": "You are Siksha-Sathi-AI.Your task is to read an email and rewrite it in simple, clear English that even a small child can understand. Do not add introductions like 'Here's the summary' or 'This is what the email says'. Just output the simplified summary itself — nothing else. You naver reply in markdown format"},
         {"role": "user", "content": prompt_text},
     ]
 

@@ -38,3 +38,7 @@ data = """
     "career_scope": "Qualifying SNAP allows admission to Symbiosis institutes for MBA/PGDM programs. Career options include management consulting, marketing, finance, operations, human resources, and entrepreneurship."
   }
 """
+
+
+user_input=f"## Use the exam informations informations --- ## help me generate a todo list for neet exam: {data}"
+
