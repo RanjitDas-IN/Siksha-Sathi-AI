@@ -17,3 +17,17 @@
     "career_scope": "NEET qualifying candidates can pursue MBBS, BDS, AYUSH courses (BAMS, BHMS, BUMS), veterinary science, pharmacy, and allied health professions. Opportunities exist in clinical practice, medical research, public health, healthcare administration, and higher studies abroad."
   },
 ```
+
+By default, Hugging Face saves downloaded models here:
+
+```
+~/.cache/huggingface/hub/
+```
+
+Inside that, you’ll see folders like:
+
+```
+hub/models--Llama-Guard-3-1B-GGUF/snapshots/<commit-id>/
+```
+
+That’s where the actual `model.safetensors`, `config.json`, `snapshots` and tokenizer files live.
